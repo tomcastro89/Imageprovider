@@ -9,7 +9,7 @@ import java.util.List;
 @RestController
 public class ImageproviderRestController {
     @GetMapping(value = "/images")
-    public List getImages(){
+    public List<Image> getImages(){
         return new ArrayList();
     }
 }
