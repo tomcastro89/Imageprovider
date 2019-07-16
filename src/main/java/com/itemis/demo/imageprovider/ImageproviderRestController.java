@@ -10,6 +10,11 @@ import java.util.List;
 public class ImageproviderRestController {
     @GetMapping(value = "/images")
     public List<Image> getImages(){
-        return new ArrayList();
+        List<Image> images = new ArrayList<>();
+        images.add(new Image(
+                "Itemis Logo",
+                "https://raw.githubusercontent.com/tomcastro89/Imageprovider/master/itemis_logo.jpeg"
+        ));
+        return images;
     }
 }
